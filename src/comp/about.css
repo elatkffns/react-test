@@ -1,0 +1,19 @@
+.container {
+  width: 60vw;
+  margin: 150px auto 0px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+  display: flex;
+}
+.skills {
+  margin: 50px 10px 10px 10px;
+  width: 50%;
+  font-weight: 300;
+  color: #4e4e4e;
+}
+.about {
+  margin: 10px;
+  width: 50%;
+  font-weight: 300;
+  color: #4e4e4e;
+}

@@ -1,0 +1,26 @@
+.ref {
+  width: 60vw;
+  margin: 150px auto 0px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+  text-align: center;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.img {
+  background-image: url(./coffee.jpg);
+  width: 30vw;
+  height: 20vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+  background-position: center;
+}
+.tagWrap {
+  display: flex;
+  flex-flow: wrap;
+}

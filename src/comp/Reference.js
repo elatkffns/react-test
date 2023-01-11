@@ -18,7 +18,7 @@ export default function Reference() {
             <div>
               <i className="img" />
             </div>
-            <div>{a}</div>
+            <figcaption className="fig">{a}</figcaption>
           </div>
         ))}
       </div>

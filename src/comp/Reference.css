@@ -20,7 +20,15 @@ a {
   margin: 0 auto;
   background-position: center;
 }
+.imgWrap {
+  margin: 10px 0;
+}
 .tagWrap {
   display: flex;
   flex-flow: wrap;
+}
+.fig {
+  margin: 10px 0;
+  font-family: sans-serif;
+  text-transform: capitalize;
 }

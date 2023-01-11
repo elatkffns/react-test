@@ -1,12 +1,14 @@
 import React from "react";
 import "./App.css";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import Ava from "./Ava.png";
+import Svg from "./comp/svg";
 
 function App() {
+  const location = useLocation();
+
   return (
     <>
-      <div className="snow" />
       <nav>
         <img src={Ava} style={{ maxWidth: "100px" }} alt="avatar img" />
         <ul>
@@ -32,11 +34,16 @@ function App() {
           </li>
         </ul>
       </nav>
-      <div className="pWrap">
-        <p className="txt">Hello</p>
-        <p className="txt">My portfolio</p>
-      </div>
-      <Outlet />
+      {location.pathname === "/" ? (
+        <div className="txtbox">
+          <p className="txt">Welcome</p>
+          <p className="txt">My portfolio</p>
+        </div>
+      ) : (
+        <Outlet />
+      )}
+      <div className="snow" />
+      <Svg />
     </>
   );
 }

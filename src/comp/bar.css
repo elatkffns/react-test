@@ -1,9 +1,12 @@
-.bar{
+.bar {
   height: 0.7rem;
   background-color: #0078ff;
   margin: 10px 0;
 }
-.rf{
+.rf {
   float: right;
 }
-
+.skillbox {
+  width: 100%;
+  background-color: #ddd;
+}

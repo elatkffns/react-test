@@ -14,7 +14,9 @@ export default function Bar() {
         <div>
           <span>{skill.lang}</span>
           <span className="rf">{skill.per}</span>
-          <div className="bar" style={{ width: skill.per }} />
+          <div className="skillbox">
+            <div className="bar" style={{ width: skill.per }} />
+          </div>
         </div>
       ))}
     </>

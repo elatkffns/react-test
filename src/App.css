@@ -1,8 +1,11 @@
-html {
+body {
   background: linear-gradient(#123 30%, #667);
   position: relative;
   overflow: hidden;
-  height: 100%;
+  height: 100vh;
+}
+.ava {
+  max-width: 100px;
 }
 
 ul {
@@ -58,22 +61,51 @@ nav {
 }
 .txtbox {
   margin: 0 auto;
-  width: 100%;
+  width: 53%;
   text-align: center;
-  position: absolute;
   font-size: 5vw;
   font-weight: 600;
-  top: 40%;
+  top: 20%;
 }
 .txt {
   color: white;
+  text-transform: capitalize;
 }
-@media screen and (max-width: 425px) {
-  html {
-    overflow: auto;
-    background-size: contain;
+.txtani {
+  white-space: nowrap;
+  animation: txt 3.5s linear infinite;
+  display: inline-block;
+  overflow: hidden;
+}
+.border {
+  display: inline-block;
+  animation: flash 0.5s infinite;
+  border-right: 2px solid black;
+  height: 5vw;
+  text-overflow: clip;
+}
+@keyframes flash {
+  from {
+    border-right: 1px solid black;
   }
-  img {
+  to {
+    border-right: 1px solid white;
+  }
+}
+@keyframes txt {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: inherit;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ava {
     display: none;
   }
   ul {
@@ -83,7 +115,7 @@ nav {
     width: 100%;
     text-align: center;
   }
-  ul li:not(:first-child) {
-    display: none;
+  .txtbox {
+    top: 40%;
   }
 }

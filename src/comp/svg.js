@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Svg() {
-  const num = Math.random().toFixed(1);
   const x = Math.trunc(Math.random() * window.innerWidth);
   return (
     <svg
@@ -17,7 +16,6 @@ export default function Svg() {
         attributeName="cy"
         from="0"
         to="100%"
-        opacity={num}
         dur="3s"
         repeatCount="indefinite"
       />

@@ -1,4 +1,5 @@
 import React from "react";
+import git from "./git.png";
 import "./contact.css";
 
 export default function Contact() {
@@ -33,13 +34,15 @@ export default function Contact() {
           </form>
         </div>
         <div className="formdiv">
-          <h5 className="title">Get in Touch</h5>
+          <h5 className="title">Git hub</h5>
           <p>
             Whether you want to get in touch, talk about a project
             collaboration, or just say hi, d love to hear from you. Simply fill
             the from and email.
           </p>
-          <div className="git" />
+          <a href="https://github.com/elatkffns">
+            <img src={git} alt="git" className="git" />
+          </a>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 .ref {
   width: 60vw;
-  margin: 150px auto 0px;
+  margin: 30px auto 0px;
   background-color: #fff;
   box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
   text-align: center;
@@ -11,24 +11,26 @@ a {
   color: black;
 }
 .img {
-  background-image: url(./coffee.jpg);
-  width: 30vw;
-  height: 20vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: block;
-  margin: 0 auto;
-  background-position: center;
+  width: 20vw;
 }
-.imgWrap {
-  margin: 10px 0;
-}
+
 .tagWrap {
   display: flex;
   flex-flow: wrap;
+  justify-content: space-around;
 }
-.fig {
-  margin: 10px 0;
+.imgtxt {
   font-family: sans-serif;
   text-transform: capitalize;
+}
+@media screen and (max-width: 600px) {
+  .ref {
+    margin: 0 auto;
+  }
+  .tagWrap {
+    flex-direction: column;
+  }
+  .img {
+    width: 30vw;
+  }
 }

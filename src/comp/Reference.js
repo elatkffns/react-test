@@ -1,5 +1,6 @@
 import React from "react";
 import "./Reference.css";
+import coffee from "./coffee.jpg";
 
 export default function Reference() {
   const arr = [
@@ -10,16 +11,13 @@ export default function Reference() {
   ];
   return (
     <div className="ref">
-      <h3>Reference</h3>
-      <p>참고한 내용</p>
+      <h3 style={{ paddingTop: "10px" }}>참고한 내용</h3>
       <div className="tagWrap">
         {arr.map((a) => (
-          <div className="imgWrap">
-            <div>
-              <i className="img" />
-            </div>
-            <figcaption className="fig">{a}</figcaption>
-          </div>
+          <figure>
+            <img src={coffee} alt="coffee" className="img" />
+            <figcaption className="imgtxt">{a}</figcaption>
+          </figure>
         ))}
       </div>
     </div>

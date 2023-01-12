@@ -4,13 +4,12 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 import Ava from "./Ava.png";
 import Svg from "./comp/svg";
 
-function App() {
+export default function App() {
   const location = useLocation();
-
   return (
     <>
       <nav>
-        <img src={Ava} style={{ maxWidth: "100px" }} alt="avatar img" />
+        <img src={Ava} alt="avatar img" className="ava" />
         <ul>
           <li>
             <Link className="link" to="/">
@@ -37,7 +36,9 @@ function App() {
       {location.pathname === "/" ? (
         <div className="txtbox">
           <p className="txt">Welcome</p>
-          <p className="txt">My portfolio</p>
+          <span className="txt txtani">my portfolio</span>
+          <span className="border" />
+          <span className="txt">{}</span>
         </div>
       ) : (
         <Outlet />
@@ -47,5 +48,3 @@ function App() {
     </>
   );
 }
-
-export default App;

@@ -11,20 +11,20 @@ import Contact from "./comp/contact";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "https://elatkffns.github.io/react-test/",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "About",
+        path: "https://elatkffns.github.io/react-test/About",
         element: <About />,
       },
       {
-        path: "Reference",
+        path: "https://elatkffns.github.io/react-test/Reference",
         element: <Reference />,
       },
       {
-        path: "contact",
+        path: "https://elatkffns.github.io/react-test/contact",
         element: <Contact />,
       },
     ],

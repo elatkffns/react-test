@@ -9,27 +9,30 @@ import About from "./comp/about";
 import Reference from "./comp/Reference";
 import Contact from "./comp/contact";
 
-const router = createBrowserRouter([
-  {
-    path: "https://elatkffns.github.io/react-test/",
-    element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "https://elatkffns.github.io/react-test/About",
-        element: <About />,
-      },
-      {
-        path: "https://elatkffns.github.io/react-test/Reference",
-        element: <Reference />,
-      },
-      {
-        path: "https://elatkffns.github.io/react-test/contact",
-        element: <Contact />,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          path: "About",
+          element: <About />,
+        },
+        {
+          path: "Reference",
+          element: <Reference />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
+        },
+      ],
+    },
+  ],
+  { basename: process.env.PUBLIC_URL }
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={router} />);

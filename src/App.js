@@ -12,31 +12,22 @@ export default function App() {
         <img src={Ava} alt="avatar img" className="ava" />
         <ul>
           <li>
-            <Link className="link" to="https://elatkffns.github.io/react-test/">
+            <Link className="link" to="/">
               home
             </Link>
           </li>
           <li>
-            <Link
-              className="link"
-              to="https://elatkffns.github.io/react-test/About"
-            >
+            <Link className="link" to="About">
               About
             </Link>
           </li>
           <li>
-            <Link
-              className="link"
-              to="https://elatkffns.github.io/react-test/Reference"
-            >
+            <Link className="link" to="Reference">
               Reference
             </Link>
           </li>
           <li>
-            <Link
-              className="link"
-              to="https://elatkffns.github.io/react-test/contact"
-            >
+            <Link className="link" to="contact">
               contact
             </Link>
           </li>

@@ -38,7 +38,6 @@ export default function App() {
           <p className="txt">Welcome</p>
           <span className="txt txtani">my portfolio</span>
           <span className="border" />
-          <span className="txt">{}</span>
         </div>
       ) : (
         <Outlet />
